@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0sp"
+     android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeMaxTextSize="80sp"
+            android:autoSizeMinTextSize="40sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:paddingTop="30sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0sp"
+     android:orientation="horizontal"
+     android:layout_weight="4">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="7"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/seven" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="8"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/eight"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="9"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/nine"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="4"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/four"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="5"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/five"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="6"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/six"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/one"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/two"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="3"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/three"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="."
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/decimal"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Append"
+                    android:id="@+id/zero"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    android:text="="
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:onClick="Result"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#807f7f"
+                android:text="DEL"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:onClick="Trim"
+                android:id="@+id/delete"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#807f7f"
+                android:text="÷"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:onClick="Action"
+                android:id="@+id/divide"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#807f7f"
+                android:text="x"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:onClick="Action"
+                android:id="@+id/multiply"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#807f7f"
+                android:text="-"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:onClick="Action"
+                android:id="@+id/subtract"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#807f7f"
+                android:text="+"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:onClick="Action"
+                android:id="@+id/add"/>
+        </LinearLayout>
+
+     </LinearLayout>
+
+</LinearLayout>
